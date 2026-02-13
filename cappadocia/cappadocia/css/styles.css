@@ -1,0 +1,139 @@
+/* banner animation - bounce effect */
+.hero-details {
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+}
+
+/* moving image in home page*/
+.fairy-chimneys-card {
+  width: auto;
+  height: auto;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+}
+
+@keyframes myAnimation {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+/* typing effect for h3 */
+.typing-about {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #000;
+  width: 0; 
+  animation: typing 2s steps(10, end) forwards,
+             blink 0.75s step-end 4s 6,
+             hideCursor 0.1s ease 4s forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 5ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+  100% { border-color: transparent; }
+}
+
+@keyframes hideCursor {
+  to { border-color: transparent; }
+}
+
+.typing-attractions {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #000;
+  width: 0; 
+  animation: typing 2s steps(15, end) forwards,
+             blink 0.75s step-end 4s 6,
+             hideCursor 0.1s ease 4s forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 11ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+  100% { border-color: transparent; }
+}
+
+@keyframes hideCursor {
+  to { border-color: transparent; }
+}
+
+.typing-travel-tips {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #000;
+  width: 0; 
+  animation: typing 2s steps(15, end) forwards,
+             blink 0.75s step-end 4s 6,
+             hideCursor 0.1s ease 4s forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 11ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+  100% { border-color: transparent; }
+}
+
+@keyframes hideCursor {
+  to { border-color: transparent; }
+}
+
+/* fade-in effect for images in attractions and travel tips page */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* slide-in for accordion in travel tips page */
+.accordion {
+  animation-duration: 3s;
+  animation-name: slide-in;
+}
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
